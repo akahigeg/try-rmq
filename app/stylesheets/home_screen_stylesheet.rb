@@ -10,11 +10,12 @@ class HomeScreenStylesheet < ApplicationStylesheet
   end
 
   def hello_world(st)
-    st.frame = {t: 100, w: 200, h: 18, centered: :horizontal}
+    st.frame = {w: 200, h: 18, t: 100, centered: :horizontal}
     st.text_alignment = :center
-    st.color = color.battleship_gray
+    st.color = color.green
+    st.background_color = color.black
     st.font = font.medium
-    st.text = 'Hello World'
+    st.text = 'Hello World!'
   end
 
 end

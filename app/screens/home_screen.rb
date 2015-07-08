@@ -7,6 +7,11 @@ class HomeScreen < PM::Screen
     set_nav_bar_button :right, title: "Right", action: :nav_right_button
 
     @hello_world = append!(UILabel, :hello_world)
+    @hello_world_2 = append!(UILabel, :hello_world)
+
+    rmq(@hello_world_2).tag(:my_tag)
+    rmq(:my_tag).layout(t: 200)
+
   end
 
   def nav_left_button
